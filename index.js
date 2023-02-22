@@ -1,3 +1,3 @@
-getCurrentWeather("Timisoara").then(CurrentWeatherData=>{
+getCurrentWeather("Cluj-Napoca").then(CurrentWeatherData=>{
     console.log(CurrentWeatherData);
 });
