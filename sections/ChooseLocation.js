@@ -20,7 +20,7 @@ function updateWeather(city){
 
     updateCurrentCity(city);
     displayCurrentWeather(city);
-    displayCurrentWeather(city);
+    displayWeatherForecast(city);
 }
 
 timisoara.addEventListener ("click", function(){
