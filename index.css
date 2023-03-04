@@ -37,7 +37,8 @@
 }
 
 h1,
-h2{
+h2,
+h3{
     font-weight: bold;
 }
 
@@ -84,4 +85,10 @@ header{
 {
     background-color:#9D9EA2 ;
     transform: scale(1.1);
+}
+
+@media(max-width:576px){
+    .weather-forecast-box .real-feel {
+        display:none;
+    }
 }

@@ -13,20 +13,18 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
     <header class="bg-primary d-flex align-items-center justify-content-center">
       <div class="container">
-        <h1 class="text-center text-primary">Weather App</h1>
+        <h1 class="text-center text-light">Weather App</h1>
       </div>
     </header>
     <main>
-      
-
       <section class="choose-location py-5">
         <div class="container">
           <h2 class="text-center text-primary">Alege-ti Locatia</h2>
@@ -49,14 +47,24 @@
               Alege un alt oras
             </button>
             <ul class="dropdown-menu">
-              <li><button class="dropdown-item timisoara" >Timisoara</button></li>
-              <li><button class="dropdown-item bucuresti">Bucuresti</button></li>
-              <li><button class="dropdown-item cluj-napoca" >Cluj-Napoca</button></li>
-              <li><button class="dropdown-item oradea" >Oradea</button></li>
-              <li><button class="dropdown-item sibiu" >Sibiu</button></li>
-              <li><button class="dropdown-item arad" >Arad</button></li>
-              <li><button class="dropdown-item brasov" >Brasov</button></li>
-              <li><button class="dropdown-item miercurea-ciuc">Miercurea Ciuc</button></li>
+              <li>
+                <button class="dropdown-item timisoara">Timisoara</button>
+              </li>
+              <li>
+                <button class="dropdown-item bucuresti">Bucuresti</button>
+              </li>
+              <li>
+                <button class="dropdown-item cluj-napoca">Cluj-Napoca</button>
+              </li>
+              <li><button class="dropdown-item oradea">Oradea</button></li>
+              <li><button class="dropdown-item sibiu">Sibiu</button></li>
+              <li><button class="dropdown-item arad">Arad</button></li>
+              <li><button class="dropdown-item brasov">Brasov</button></li>
+              <li>
+                <button class="dropdown-item miercurea-ciuc">
+                  Miercurea Ciuc
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -64,9 +72,16 @@
       <section class="py-5 bg-secondary">
         <div class="container">
           <h2 class="text-center">Vremea curenta</h2>
-          <div class="current-weather d-flex justify-content-evenly align-items-center">
-            </div>
-          </div>
+          <div
+            class="current-weather d-flex justify-content-evenly align-items-center"
+          ></div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center">Prognoza pe 5 zile</h2>
+          <div class="weather-forecast"></div>
+        </div>
       </section>
     </main>
 
@@ -94,7 +109,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-   
+
     <script src="sections/ChooseLocation.js"></script>
     <script src="sections/currentWeather.js"></script>
     <script src="sections/ScrollToTop.js"></script>
@@ -102,8 +117,8 @@
     <script src="services/weatherService.js"></script>
     <script src="utils/date.js"></script>
     <script src="utils/weather.js"></script>
-    
+    <script src="sections/weatherForecast.js"></script>
+
     <script src="index.js"></script>
-    
   </body>
 </html>
