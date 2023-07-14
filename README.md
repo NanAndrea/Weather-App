@@ -1,3 +1,3 @@
 # Weather App
 
-Aplicatie de vreme.
+https://aplicatie-vreme.netlify.app
